@@ -156,21 +156,21 @@ xticklabels(ax1,{'0^oE','60^oE','120^oE','180^oE','120^oW','60^oW'})
 cb1 = colorbar(ax1,'Position',[.92 .11 .03 .815]);
 hold on
 
-% % load Fig 1C,D species (data downloaded from https://obis.org/)
-load('c_striata/obis_c_striata.mat')
-dat.lon(dat.lon<0)= dat.lon(dat.lon<0)+360;
-% remove 3 land occurrences for plotting
-dat.lon(dat.lon<150)=nan;
-dat.lon(dat.lon<277 & dat.lat>35)=nan;
-scatter(dat.lon,dat.lat,15,[.1 .1 .6]*0,'marker','x')
-load('p_antarctica/obis_p_antarctica.mat')
-dat.lon(dat.lon<0)= dat.lon(dat.lon<0)+360;
-scatter(dat.lon,dat.lat,15,[.1 .6 .1]*0,'marker','o')
-load('p_diacanthus/obis_p_diacanthus.mat')
-% remove 3 land occurrences for plotting
-dat.lon(dat.lon<0)= dat.lon(dat.lon<0)+360;
-dat.lon(dat.lon<50 & dat.lat>-.5 & dat.lat<10.5)=nan;
-scatter(dat.lon,dat.lat,15,[.6 .1 .1]*0,'marker','^')
+% % % load Fig 1C,D species (species occurrence data are available from https://obis.org/)
+% load('c_striata/obis_c_striata.mat')
+% dat.lon(dat.lon<0)= dat.lon(dat.lon<0)+360;
+% % remove 3 land occurrences for plotting
+% dat.lon(dat.lon<150)=nan;
+% dat.lon(dat.lon<277 & dat.lat>35)=nan;
+% scatter(dat.lon,dat.lat,15,[.1 .1 .6]*0,'marker','x')
+% load('p_antarctica/obis_p_antarctica.mat')
+% dat.lon(dat.lon<0)= dat.lon(dat.lon<0)+360;
+% scatter(dat.lon,dat.lat,15,[.1 .6 .1]*0,'marker','o')
+% load('p_diacanthus/obis_p_diacanthus.mat')
+% % remove 3 land occurrences for plotting
+% dat.lon(dat.lon<0)= dat.lon(dat.lon<0)+360;
+% dat.lon(dat.lon<50 & dat.lat>-.5 & dat.lat<10.5)=nan;
+% scatter(dat.lon,dat.lat,15,[.6 .1 .1]*0,'marker','^')
 cd figs
 saveas(gcf,'Fig1A','pdf')
 cd ..
