@@ -576,10 +576,10 @@ cd ..
 if ~do.Eoeff % !!!!!!!!! WARNING: only run with do.Eoeff = 0 (i.e., with Eo(Tref))
 figure
 % upper 100 m habitat 
-load('modern_Hvol_phimax_100m_seasonal.mat')
+load('modern_Hvol_phimax_100m_seasonal_final.mat')
 E = -2+0.1/2:0.1:2-0.1/2;
 A = 0+0.5:1:35-0.5;
-contourf(E(1:end),A(1:end),V')
+contourf(E(1:end),A(1:end),V',6)
 hold on
 Eo2Ec = 0.07; % median difference between lab Eo(Tref) and obis Eeco(Tref)
 scatter(Phy.Eoref(Phy.Zmed<100)-Eo2Ec,Phy.Ac(Phy.Zmed<100),100,'r','linewidth',2)
@@ -601,9 +601,9 @@ cd ..
 
 % Fig 3C
 % upper 1000 m habitat 
-load('modern_Hvol_phimax_100_1000m_seasonal.mat')
+load('modern_Hvol_phimax_100_1000m_seasonal_final.mat')
 figure
-contourf(E(1:end),A(1:end),V')
+contourf(E(1:end),A(1:end),V',6)
 hold on
 scatter(Phy.Eoref(Phy.Zmed>100 & Phy.Zmed<10000)-Eo2Ec,Phy.Ac(Phy.Zmed>100 & Phy.Zmed<10000),100,'r','linewidth',2)
 colormap(cbrewer('seq','Blues',20))
