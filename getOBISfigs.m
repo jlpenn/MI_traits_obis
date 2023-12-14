@@ -98,7 +98,7 @@ obis.XYZbin = double(obis.XYZbin);
 lat1 = -87.5:5:87.5;
 lon1 = 2.5:5:357.5;
 
-% land mask
+% land mask regridded from Amante, C. & Eakins, B. W. ETOPO1 1 Arc-Minute Global Relief Model: Procedures, Data Sources and Analysis. NOAA Technical Memorandum NESDIS NGDC-24 https://doi. org/10.7289/V5C8276M (2009)
 load('etopo.mat')
 
 % rearrange longitude
