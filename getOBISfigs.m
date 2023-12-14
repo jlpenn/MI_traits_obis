@@ -6,7 +6,7 @@ do.F1min = 0.5; % minimum F1 for analyses
 do.qc=1; % filter lab trait?
 
 % paths to cbrewer
-addpath(genpath('/Users/jpenn/Desktop/Research/FRES/Cambridge_prisms/Cambridge'))
+%addpath(genpath('insert path here'))
 
 % laboratory traits from Deutsch et al., (Nature) 2020
 load('Phy.mat')
