@@ -1,0 +1,8 @@
+cff-version: 1.1.0
+message: "If you use this software, please cite it as below."
+authors:
+Justin Penn, Curtis Deutsch
+Code for Geographical and taxonomic patterns in aerobic traits of marine ectotherms (https://zenodo.org/doi/10.5281/zenodo.10403765)
+title:jlpenn/MI_traits_obis: v1.0.0
+version: v1.0.0
+date-released: 2023-12-19
