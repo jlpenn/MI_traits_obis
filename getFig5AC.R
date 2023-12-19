@@ -22,14 +22,7 @@ if (trait == "E") {
   p2 =
     ggtree(fish.tree, ,ladderize = FALSE, size=.6) + 
     geom_tree(aes(color=trait), continuous=T, size=.25) + 
-    #ggtree(fish.tree, layout='circular',ladderize = FALSE, size=.5) + 
-    #geom_tree(aes(color=trait), continuous=T, size=.3) + 
-    #scale_color_gradientn(colours=c("blue","yellow","red")) +
     scale_color_gradientn(colours=inlmisc::GetColors(length(seq(0,20,5)),scheme='turbo'),limits=c(-.5,1))  + 
-    #scale_color_gradientn(colours=inlmisc::GetColors(length(seq(0,20,5)),scheme='BuRd'),limits=c(-1,1))  + 
-    #scale_color_gradientn(low="yellow",high="red",limits=c(-.5,1))  + 
-  #  scale_fill_gradient(low = "yellow", high = "red", na.value = NA)
-  #scale_color_gradient2(limits=c(-2,2))  + 
     xlim(0, 1.2) +
     theme(legend.position = c(0,0), plot.margin = margin(2,2,2,2,"cm"))
   
@@ -38,9 +31,6 @@ if (trait == "E") {
   p =
     ggtree(fish.tree,ladderize = FALSE, size=.6) + 
     geom_tree(aes(color=trait), continuous=T, size=.25) + 
-    #ggtree(fish.tree, layout='circular',ladderize = FALSE, size=.5) + 
-    #geom_tree(aes(color=trait), continuous=T, size=.3) + 
-    #scale_color_gradientn(colours=c("red", 'orange', 'green', 'cyan', 'blue')) +
     scale_color_gradientn(colours=inlmisc::GetColors(length(seq(0,20,5)),scheme='turbo'),limits=c(0.5,1.5))  + 
     xlim(0, 1.2) +
     theme(legend.position = c(0,0), plot.margin = margin(2,2,2,2,"cm"))
