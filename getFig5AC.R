@@ -50,7 +50,6 @@ if (trait == "E") {
 
 if (makelab == 1){
 # label phyla
-# Wilco's circle tree plot
 phytools::plotTree(my_tree,fsize=0.1,ftype="i",show.tip.label=TRUE)
   
   idx<-which(my_tree$node.label=="Demospongiae")
