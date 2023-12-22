@@ -638,7 +638,7 @@ EoO_tminO=obis.Eref + dEdT.*(TminO-Tref);
 Ikp=1:length(obis.F1);
 Ikp=obis.F1>0.5;
 phimax=obis.phi1e_prct(:,prct==(100-plim));% 95th percentile 
-m2m=phimax(Ikp);% relative to Phi-crit =1 
+m2m=phimax(Ikp);% already normalized to sustained metabolic rate (i.e. Phi-crit =1)
 median(m2m,'omitnan')
 figure
 subplot(121);
